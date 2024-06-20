@@ -12,12 +12,9 @@
         <nav>
             <ul>
                 <li><a href="#home" onclick="showSection('home')">Главная</a></li>
-                <li><a href="#categories" onclick="showSection('categories')">Категории</a></li>
                 <li><a href="#about" onclick="showSection('about')">О нас</a></li>
                 <li><a href="#contacts" onclick="showSection('contacts')">Контакты</a></li>
                 <li><a href="#cart" onclick="showSection('cart')">Корзина <span id="cart-count" class="cart-badge">0</span></a></li>
-
-
             </ul>
         </nav>
     </header>
@@ -45,28 +42,35 @@
                     <p>Цена: 1000 руб.</p>
                     <button onclick="addToCart(this)">Добавить в корзину</button>
                 </div>
+                <!-- Добавленные товары -->
+                <div class="product-item" data-name="Товар 4" data-price="1200">
+                    <img src="path/to/image4.jpg" alt="Название товара">
+                    <h3>Название товара 4</h3>
+                    <p>Цена: 1200 руб.</p>
+                    <button onclick="addToCart(this)">Добавить в корзину</button>
+                </div>
+                <div class="product-item" data-name="Товар 5" data-price="1500">
+                    <img src="path/to/image5.jpg" alt="Название товара">
+                    <h3>Название товара 5</h3>
+                    <p>Цена: 1500 руб.</p>
+                    <button onclick="addToCart(this)">Добавить в корзину</button>
+                </div>
+                <div class="product-item" data-name="Товар 6" data-price="1800">
+                    <img src="path/to/image6.jpg" alt="Название товара">
+                    <h3>Название товара 6</h3>
+                    <p>Цена: 1800 руб.</p>
+                    <button onclick="addToCart(this)">Добавить в корзину</button>
+                </div>
             </div>
         </section>
-
-
-        <section id="categories" class="hero" style="display:none;">
-            <h2>Категории</h2>
-            <p>Здесь представлены различные категории товаров.</p>
-        </section>
-
-
         <section id="about" class="hero" style="display:none;">
             <h2>О нас</h2>
             <p>Мы компания</p>
         </section>
-
-
         <section id="contacts" class="hero" style="display:none;">
             <h2>Контакты</h2>
             <p>Свяжитесь </p>
         </section>
-
-
         <section id="cart" class="hero" style="display:none;">
             <h2>Корзина</h2>
             <div id="cart-items"></div>

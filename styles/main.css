@@ -86,7 +86,8 @@ main {
     border: 1px solid #ddd;
     margin: 10px;
     padding: 10px;
-    width: 200px;
+    width: calc(33.333% - 40px); /* Adjust width for 3 items per row */
+    box-sizing: border-box;
     transition: box-shadow 0.3s;
 }
 
@@ -133,15 +134,19 @@ footer {
     }
 
     .product-item {
-        width: 100%;
-        max-width: 300px;
+        width: calc(50% - 40px); /* Adjust width for 2 items per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .product-item {
+        width: calc(100% - 40px); /* Adjust width for 1 item per row */
     }
 }
 
 .hidden {
     display: none;
 }
-
 
 .product-item button:active {
     transform: scale(0.95); /* уменьшаем кнопку при активации */
