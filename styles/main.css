@@ -1,20 +1,26 @@
-body {
-    font-family: Arial, sans-serif;
+html, body {
+    height: 100%;
     margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif;
     box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
 }
 
 header {
     background-color: #333;
     color: white;
     padding: 10px 0;
+    text-align: center;
 }
 
 .logo {
     font-size: 24px;
     font-weight: bold;
-    text-align: center;
+    margin-bottom: 10px;
 }
 
 nav ul {
@@ -22,6 +28,7 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
+    margin: 0;
 }
 
 nav ul li {
@@ -32,6 +39,15 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff9800;
+}
+
+main {
+    flex: 1;
 }
 
 .hero {
@@ -40,9 +56,24 @@ nav ul li a {
     text-align: center;
 }
 
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #555;
+}
+
 .products {
     padding: 20px;
     text-align: center;
+}
+
+.products h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
 }
 
 .product-list {
@@ -56,10 +87,35 @@ nav ul li a {
     margin: 10px;
     padding: 10px;
     width: 200px;
+    transition: box-shadow 0.3s;
 }
 
 .product-item img {
     width: 100%;
+    height: auto;
+}
+
+.product-item h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.product-item p {
+    font-size: 16px;
+    color: #555;
+}
+
+.product-item button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.product-item button:hover {
+    background-color: #ff9800;
 }
 
 footer {
@@ -67,7 +123,21 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    margin-top: auto;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .product-item {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+.hidden {
+    display: none;
 }

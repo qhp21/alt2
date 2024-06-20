@@ -3,53 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grab Altushka!!!</title>
+    <title>)</title>
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
     <header>
-        <div class="logo">Grab Altushka!!!</div>
+        <div class="logo">Разрабы дауны</div>
         <nav>
             <ul>
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">Категории</a></li>
-                <li><a href="#">О нас</a></li>
-                <li><a href="#">Контакты</a></li>
-                <li><a href="#">Корзина</a></li>
+                <li><a href="#home" onclick="showSection('home')">Главная</a></li>
+                <li><a href="#categories" onclick="showSection('categories')">Категории</a></li>
+                <li><a href="#about" onclick="showSection('about')">О нас</a></li>
+                <li><a href="#contacts" onclick="showSection('contacts')">Контакты</a></li>
+                <li><a href="#cart" onclick="showSection('cart')">Корзина</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="hero">
+        <section id="home" class="hero">
             <h1>Добро пожаловать в наш магазин!</h1>
             <p>Здесь вы найдете лучшие товары по лучшим ценам.</p>
-        </section>
-        <section class="products">
             <h2>Популярные товары</h2>
             <div class="product-list">
-                <div class="product-item">
-                    <img src="path/to/image.jpg" alt="Название товара">
+                <div class="product-item" data-name="скуф" data-price="1000">
+                    <img src="images/skuf.jpeg" alt="Название товара">
                     <h3>Название товара</h3>
                     <p>Цена: 1000 руб.</p>
-                    <button>Добавить в корзину</button>
+                    <button onclick="addToCart(this)">Добавить в корзину</button>
                 </div>
-                <div class="product-item">
+                <div class="product-item" data-name="Товар 2" data-price="1000">
                     <img src="path/to/image.jpg" alt="Название товара">
                     <h3>Название товара</h3>
                     <p>Цена: 1000 руб.</p>
-                    <button>Добавить в корзину</button>
+                    <button onclick="addToCart(this)">Добавить в корзину</button>
                 </div>
-                <div class="product-item">
+                <div class="product-item" data-name="Товар 3" data-price="1000">
                     <img src="path/to/image.jpg" alt="Название товара">
                     <h3>Название товара</h3>
                     <p>Цена: 1000 руб.</p>
-                    <button>Добавить в корзину</button>
+                    <button onclick="addToCart(this)">Добавить в корзину</button>
                 </div>
             </div>
         </section>
+
+
+        <section id="categories" class="hero" style="display:none;">
+            <h2>Категории</h2>
+            <p>Здесь представлены различные категории товаров.</p>
+        </section>
+
+
+        <section id="about" class="hero" style="display:none;">
+            <h2>О нас</h2>
+            <p>Мы компания</p>
+        </section>
+
+
+        <section id="contacts" class="hero" style="display:none;">
+            <h2>Контакты</h2>
+            <p>Свяжитесь </p>
+        </section>
+
+
+        <section id="cart" class="hero" style="display:none;">
+            <h2>Корзина</h2>
+            <div id="cart-items"></div>
+            <p id="cart-total">Итого: 0 руб.</p>
+            <button onclick="checkout()">Оформить заказ</button>
+        </section>
     </main>
     <footer>
-        <p>&copy; 2024 Grab Altushka!!!. Все права защищены.</p>
+        <p>&copy; 2024 Все права </p>
     </footer>
+    <script src="scripts/main.js"></script>
 </body>
 </html>
