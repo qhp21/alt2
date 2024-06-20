@@ -112,7 +112,7 @@ main {
     border: none;
     padding: 10px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.4s;
 }
 
 .product-item button:hover {
