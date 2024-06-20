@@ -141,3 +141,21 @@ footer {
 .hidden {
     display: none;
 }
+
+
+.product-item button:active {
+    transform: scale(0.95); /* уменьшаем кнопку при активации */
+    background-color: #f57c00; /* изменяем цвет фона при активации */
+}
+
+.cart-badge {
+    position: relative;
+    display: inline-block;
+    background-color: #4CAF50; /* Цвет фона кружка */
+    color: white;
+    font-size: 12px;
+    padding: 4px 8px; /* Отступы внутри кружка */
+    border-radius: 50%; /* Делаем кружок круглым */
+    top: -10px; /* Поднимаем кружок над текстом */
+    right: -10px; /* Выравниваем кружок по правому краю */
+}

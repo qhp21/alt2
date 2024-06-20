@@ -31,9 +31,13 @@ function addToCart(button) {
 
 function updateCart() {
     const cartItemsContainer = document.getElementById('cart-items');
+    const cartTotal = document.getElementById('cart-total');
+    const cartCount = document.getElementById('cart-count');
+
     cartItemsContainer.innerHTML = '';
 
     let total = 0;
+    let itemCount = 0;
 
     cart.forEach(item => {
         const itemElement = document.createElement('div');
@@ -45,9 +49,18 @@ function updateCart() {
         cartItemsContainer.appendChild(itemElement);
 
         total += item.price * item.quantity;
+        itemCount += item.quantity;
     });
 
-    document.getElementById('cart-total').innerText = `Итого: ${total} руб.`;
+    cartTotal.innerText = `Итого: ${total} руб.`;
+    cartCount.innerText = `${itemCount}`;
+
+    // Если нет товаров, можно скрыть кружок
+    if (itemCount === 0) {
+        cartCount.style.display = 'none';
+    } else {
+        cartCount.style.display = 'inline-block'; // Возвращаем видимость кружка
+    }
 }
 
 function removeFromCart(productName) {
