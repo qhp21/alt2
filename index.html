@@ -19,7 +19,8 @@
         </nav>
     </header>
     <main>
-        <section id="home" class="hero">
+        <section id="home" class="hero parallax">
+            <div class="parallax-bg"></div>
             <h1>Добро пожаловать в наш магазин!</h1>
             <p>Здесь вы найдете лучшие товары для рыбалки по лучшим ценам!</p>
             <h2>Популярные товары</h2>
@@ -64,16 +65,17 @@
                     <button onclick="addToCart(this)">Добавить в корзину</button>
                 </div>
             </div>
+            </div>
         </section>
-        <section id="about" class="hero" style="display:none;">
+        <section id="about" class="hero hidden">
             <h2>О нас</h2>
-            <p>Мы компания</p>
+            <p>Мы компания, которая специализируется на продаже высококачественных товаров для рыбалки. Наша миссия - предоставить нашим клиентам лучший выбор товаров и отличное обслуживание.</p>
         </section>
-        <section id="contacts" class="hero" style="display:none;">
+        <section id="contacts" class="hero hidden">
             <h2>Контакты</h2>
-            <p>Свяжитесь </p>
+            <p>Свяжитесь с нами по телефону: +7 (995) 591-33-57.</p>
         </section>
-        <section id="cart" class="hero" style="display:none;">
+        <section id="cart" class="hero hidden">
             <h2>Корзина</h2>
             <div id="cart-items"></div>
             <p id="cart-total">Итого: 0 руб.</p>
@@ -81,7 +83,7 @@
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 Все права </p>
+        <p>&copy; 2024 Все права защищены. Удивительный Карп.</p>
     </footer>
     <script src="scripts/main.js"></script>
 </body>
