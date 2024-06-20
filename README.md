@@ -1,23 +1,19 @@
-# nodejs-package
+# Добро пожаловать в Удивительный карп!
 
-[![Node CI](https://github.com/hexlet-boilerplates/nodejs-package/workflows/Node%20CI/badge.svg)](https://github.com/hexlet-boilerplates/nodejs-package/actions)
-[![Maintainability](https://api.codeclimate.com/v1/badges/dfc50c2d88cd46d069c1/maintainability)](https://codeclimate.com/github/hexlet-boilerplates/nodejs-package/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/dfc50c2d88cd46d069c1/test_coverage)](https://codeclimate.com/github/hexlet-boilerplates/nodejs-package/test_coverage)
+![Удивительный карп](images/logo.png)
 
-## Setup
+## О нашем проекте
 
-```bash
-make install
-```
+Удивительный карп — это ваш идеальный пункт назначения для рыболовных покупок онлайн. Мы предлагаем широкий ассортимент товаров, специализированных на рыболовстве, чтобы каждый любитель этого увлекательного хобби мог найти здесь что-то для себя.
 
-## Run tests
+## Что мы предлагаем
 
-```bash
-make test
-```
+- **Качественные товары**: только проверенные бренды и надежные поставщики.
+- **Широкий выбор**: удилища, катушки, наживки, аксессуары и многое другое.
+- **Отличные цены**: доступные цены при сохранении высокого качества.
 
-[![Hexlet Ltd. logo](https://raw.githubusercontent.com/Hexlet/assets/master/images/hexlet_logo128.png)](https://hexlet.io/?utm_source=github&utm_medium=link&utm_campaign=nodejs-package)
+## Почему выбирают нас
 
-This repository is created and maintained by the team and the community of Hexlet, an educational project. [Read more about Hexlet](https://hexlet.io/?utm_source=github&utm_medium=link&utm_campaign=nodejs-package).
+Мы гордимся тем, что предлагаем не только продукцию высокого качества, но и отличный сервис. Наша команда всегда готова помочь вам с выбором товаров и ответить на ваши вопросы.
 
-See most active contributors on [hexlet-friends](https://friends.hexlet.io/).
+Присоединяйтесь к Удивительному карпу и погружайтесь в мир рыболовных приключений прямо сейчас!
